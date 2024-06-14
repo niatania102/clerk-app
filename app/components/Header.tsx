@@ -22,7 +22,7 @@ const Header = () => {
               Sign In
             </Link>
             <Link
-              href="sign-in"
+              href="sign-up"
               className="text-gray-300 hover:text-white mr-4"
             >
               Sign Up
@@ -34,9 +34,6 @@ const Header = () => {
               appearance={{
                 elements: {
                   avatarBox: "h-10 w-10",
-                },
-                variables: {
-                  colorPrimary: "#ff7000",
                 },
               }}
             />
