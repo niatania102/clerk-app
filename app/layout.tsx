@@ -7,6 +7,7 @@ import {
   UserButton
 } from '@clerk/nextjs'
 import './globals.css'
+import Header from './components/Header'
 export default function RootLayout({
   children,
 }: {
@@ -16,13 +17,8 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-          <main className="container mx-auto">
+          <Header/>
+          <main className="container">
             <div className="flex items-start justify-center min-h-screen">
               <div className='mt-20'>
                 {children}
